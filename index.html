@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0%;
+        }
+        .contenedor-flexible{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;                        /*pone las cajas de arriba a abajao y de en end se pone de abajo arriba o al centro*/
+            flex-wrap: wrap-reverse;
+            /*justify-content: space-around;*/
+            /*justify-content: space-between;*/             /*distribuye la misma cantidad de espacios entre los elementos(inicio,fin) contrario al spacea-round*/
+            /*justify-content: flex-end;*/              /*coloca las cajar al inicio, centro y final en ese orden*/
+            /*flex-direction: row-reverse;*/    /*modifica la direccion y cambia los datos*/
+            /*flex-direction: column-reverse;*/         /*css condicional util el telefonos*/
+        }
+        .uno, .cinco{
+            background-color: brown;
+            width: 150px;
+            height: 50px;
+            color: white;
+        }
+        .dos, .seis{
+            background-color: orange;
+            width: 150px;
+            height: 150px;
+            color: white;
+        }
+        .tres, .siete{
+            background-color: violet;
+            width: 150px;
+            height: 100px;
+            color: white;
+        }
+        .cuatro{
+            background-color: blue;
+            width: 150px;
+            height: 200px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor-flexible">
+        <div class="elemento-flexible uno">Elemento 1</div>
+        <div class="elemento-flexible dos">Elemento 2</div>
+        <div class="elemento-flexible tres">Elemento 3</div>
+        <div class="elemento-flexible cuatro">Elemento 4</div>
+        <div class="elemento-flexible cinco">Elemento 5</div>
+        <div class="elemento-flexible seis">Elemento 6</div>
+        <div class="elemento-flexible siete">Elemento 7</div>
+    </div>
+
+</body>
+</html>
